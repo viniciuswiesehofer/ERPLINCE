@@ -1,0 +1,253 @@
+/* --------------------------------------
+=========================================
+RESPONSIVE FIXES
+=========================================
+-----------------------------------------*/
+
+
+ @media (max-width: 991px) {
+     
+     .pull-right, 
+     .pull-left {
+         float: none !important;
+         margin: 5px auto;
+     }
+     
+     .text-left,
+     .text-right {
+         
+         text-align: center;
+     }
+     
+     .side-screenshot {
+         margin-bottom: 40px;
+     }
+     
+     .feature-list,
+     .feature-list-1 {
+         margin-top: 0;
+     }
+     
+     .feature-list li .icon-container,
+     .feature-list-1 li .icon-container {
+         float: left !important;
+     }
+     
+     .feature-list li p,
+     .feature-list-1 li p {
+         text-align: left !important;
+     }
+     .feature-list-2 li .icon-container {
+         margin-right: 0;
+         margin: auto;
+         margin-bottom: 10px;
+     }
+     
+     header .vertical-registration-form {
+         margin-top: 10px;
+        
+     }
+     .intro {
+         text-align: left !important
+     }
+     
+     .intro-section {
+         margin-bottom: 50px;
+         margin-top: 0;
+     }
+ }
+ 
+ 
+@media (min-width: 768px) and (max-width: 991px) { 
+    
+    html {
+        font-size: 90%;
+    }
+    
+    .sticky-navigation .navbar-header {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sticky-navigation .navbar-header a {
+        float: none !important;
+    }
+     
+     .feature-list-1 {
+         float: left;
+         font-size: 16px;
+         line-height: 25px;
+     }
+     .feature-list-1 li p {
+         font-size: 16px;
+         line-height: 25px;
+     }
+    
+}
+
+
+@media(max-width:767px) {
+    
+	html {
+		font-size: 80%;
+	}
+
+	.navigation-header {
+		padding-top: 25px;
+		padding-bottom: 10px;
+	}
+
+	.navbar-inverse .navbar-collapse {
+		border-color: #ececec;
+	}
+
+	header,
+	.cta-section {
+		background-attachment: scroll !important;
+	}
+
+	.intro {
+		text-align: center !important;
+		margin-bottom: 60px;
+	}
+
+	.blog-title{
+		margin-bottom: 0;
+	}
+
+	.section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6,
+    .section7 {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+
+	.feature-list-1 {
+		width: 80%;
+		margin: auto;
+	}
+
+	.feature-list-1 li p {
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	.navbar-toggle {
+		background: #727272;
+	}
+
+	.nav > li,
+	.nav > li ul li {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.multipage-menu.nav > li,
+	.multipage-menu.nav > li ul li {
+		display: block;
+	}
+
+	.navbar .nav > li ul,
+	.navbar .nav > li ul ul{
+		position: relative;
+		display: block;
+		top: 0;
+		text-align: left;
+		min-width: inherit;
+		padding: 0;
+		padding-left: 20px !important;
+		left: auto;
+		right:auto;
+	}
+
+	.sub-menu{
+		margin-left: 15px;
+	}
+
+	.sub-menu a{
+		color: #000;
+	}
+
+	.vertical-registration-form {
+		max-width: 80%;
+	}
+
+	.subscription-form .input-box {
+		margin: auto;
+		width: 80%;
+		margin-bottom: 10px;
+		margin-top: 25px;
+	}
+
+	embed,
+	iframe,
+	object,
+	video {
+		height: auto;
+	}
+
+	.sub-heading{
+		margin-top: 15px;
+	}
+}
+ 
+ 
+@media(max-width:480px) {
+    
+	html {
+		font-size: 65%;
+	}
+
+	.feature-list-1 {
+		display: block;
+	}
+
+	body {
+		font-size: 13px;
+		line-height: 21px;
+	}
+
+	.feature-list-1 {
+		width: 80%;
+	}
+
+	.vertical-registration-form {
+		max-width: 100%;
+	}
+
+	h4 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	h5 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	h6 {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.standard-button,.secondary-button {
+		font-size: 13px;
+		min-width: 100px;
+		padding: 11px 20px 11px 20px;
+	}
+
+	.post-contents{
+		padding: 15px;
+	}
+
+	.meta-author, .meta-date, .meta-category{
+		padding: 0;
+		margin-top: 10px;
+		padding: 2px 5px;
+	}
+}

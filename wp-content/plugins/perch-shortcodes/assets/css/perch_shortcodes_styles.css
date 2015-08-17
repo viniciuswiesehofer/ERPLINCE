@@ -1,0 +1,283 @@
+/*
+ * Plugin: Symple Shortcodes Plugin
+ * Author: AJ Clarke : http://wpexplorer.com
+ * Copyright: Copyright (c) 2012, AJ Clarke
+*/
+
+/* Global Styles
+================================================== */
+.perch-clear-floats { clear: both }
+.perch-clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.perch-fadein { opacity: 0; }
+/* Spacing
+================================================== */
+.perch-spacing { display: block; height: auto; margin: 0 !important; padding: 0 !important; background: none !important; border: none !important; outline: none !important; }
+/* Divider
+================================================== */
+.perch-divider { display: block; width: 100%; height: 0; margin: 0; background: none !important; }
+.perch-divider.solid { border-top: 1px solid #f7f8fa }
+.perch-divider.dashed { border-top: 2px dashed #f7f8fa }
+.perch-divider.dotted { border-top: 3px dotted #f7f8fa }
+.perch-divider.double { height: 5px; border-top: 1px solid #f7f8fa; border-bottom: 1px solid #f7f8fa; }
+.perch-divider.fadeout { width: 100%; height: 1px; border: none; margin-bottom: 42px; margin-top: 12px; margin-left: auto; margin-right: auto; background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#dddddd), to(#f9f9f9)) !important; background-image: -webkit-radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; background-image: -moz-radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; background-image: -o-radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; background-image: -ms-radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; background-image: radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; }
+.perch-divider.fadein { width: 100%; height: 1px; border: none; margin-bottom: 42px; margin-top: 12px; margin-left: auto; margin-right: auto; background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#dddddd), to(#f9f9f9)) !important; background-image: -webkit-radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; background-image: -moz-radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; background-image: -o-radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; background-image: -ms-radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; background-image: radial-gradient(50% 50%, #dddddd, #f9f9f9) !important; }
+/* Social
+================================================== */
+.perch-social-icon { display: inline-block; margin-right: 5px; }
+.perch-social-icon img { display: inline; border: none; outline: none; padding: 0; margin: 0; box-shadow: none !important; }
+.perch-social-icon img:hover { opacity: 0.8 }
+/* Columns
+================================================== */
+.perch-one-half { width: 48% }
+.perch-one-third { width: 30.66% }
+.perch-two-third { width: 65.33% }
+.perch-one-fourth { width: 22% }
+.perch-three-fourth { width: 74% }
+.perch-one-fifth { width: 16.8% }
+.perch-two-fifth { width: 37.6% }
+.perch-three-fifth { width: 58.4% }
+.perch-four-fifth { width: 67.2% }
+.perch-one-sixth { width: 13.33% }
+.perch-five-sixth { width: 82.67% }
+.perch-one-half, .perch-one-third, .perch-two-third, .perch-three-fourth, .perch-one-fourth, .perch-one-fifth, .perch-two-fifth, .perch-three-fifth, .perch-four-fifth, .perch-one-sixth, .perch-five-sixth { position: relative; margin-right: 4%; margin-bottom: 2em; float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.perch-column-last { margin-right: 0!important; clear: right; }
+.perch-column-last:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.perch-one-half, .perch-one-third, .perch-two-third, .perch-three-fourth, .perch-one-fourth, .perch-one-fifth, .perch-two-fifth, .perch-three-fifth, .perch-four-fifth, .perch-one-sixth, .perch-five-sixth { }
+/* Buttons
+================================================== */
+.perch-button {  margin: 5px 5px 5px 0; cursor: pointer; display: inline-block; white-space: nowrap; nowhitespace: afterproperty; text-align: center;  outline: none;  background: #aaaaaa; text-decoration: none !important;  }
+.perch-button span.perch-button-inner { display: block; color: #fff; font-weight: bold; padding: 1.1em 1.4em; line-height: 0.8em; text-decoration: none; text-align: center; white-space: nowrap;  }
+.perch-button span.perch-button-inner i{
+	line-height: 0.8em;
+	font-size: inherit;
+	height: auto;
+	width: auto;
+	padding: 0 5px;
+}
+.perch-button:active { text-decoration: none; background: #7e7e7e; background: -moz-linear-gradient(top,  #7e7e7e 0%, #aaaaaa 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7e7e7e), color-stop(100%,#aaaaaa)); background: -webkit-linear-gradient(top,  #7e7e7e 0%,#aaaaaa 100%); background: -o-linear-gradient(top,  #7e7e7e 0%,#aaaaaa 100%); background: -ms-linear-gradient(top,  #7e7e7e 0%,#aaaaaa 100%); background: linear-gradient(to bottom,  #7e7e7e 0%,#aaaaaa 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', endColorstr='#aaaaaa',GradientType=0 ); }
+.perch-button:hover { text-decoration: none; opacity: 0.9; -moz-opacity: 0.9; -webkit-opacity: 0.9; }
+.perch-button.black { background: #505050; background: -moz-linear-gradient(top,  #505050 0%, #101010 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#505050), color-stop(100%,#101010)); background: -webkit-linear-gradient(top,  #505050 0%,#101010 100%); background: -o-linear-gradient(top,  #505050 0%,#101010 100%); background: -ms-linear-gradient(top,  #505050 0%,#101010 100%); background: linear-gradient(to bottom,  #505050 0%,#101010 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505050', endColorstr='#101010',GradientType=0 ); border: 1px solid #101010; }
+.perch-button.black:active { background: #101010; background: -moz-linear-gradient(top,  #101010 0%, #505050 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#101010), color-stop(100%,#505050)); background: -webkit-linear-gradient(top,  #101010 0%,#505050 100%); background: -o-linear-gradient(top,  #101010 0%,#505050 100%); background: -ms-linear-gradient(top,  #101010 0%,#505050 100%); background: linear-gradient(to bottom,  #101010 0%,#505050 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101010', endColorstr='#505050',GradientType=0 ); }
+.perch-button.black span.perch-button-inner { border-top: 1px solid #6e6e6e }
+.perch-button.red { background: #d01d10; background: -moz-linear-gradient(top,  #f36d64 0%, #d01d10 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f36d64), color-stop(100%,#d01d10)); background: -webkit-linear-gradient(top,  #f36d64 0%,#d01d10 100%); background: -o-linear-gradient(top,  #f36d64 0%,#d01d10 100%); background: -ms-linear-gradient(top,  #f36d64 0%,#d01d10 100%); background: linear-gradient(to bottom,  #f36d64 0%,#d01d10 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f36d64', endColorstr='#d01d10',GradientType=0 ); border: 1px solid #d01d10; }
+.perch-button.red span.perch-button-inner { border-top: 1px solid #f69a93 }
+.perch-button.red:active { background: #d01d10; background: -moz-linear-gradient(top,  #d01d10 0%, #f36d64 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d01d10), color-stop(100%,#f36d64)); background: -webkit-linear-gradient(top,  #d01d10 0%,#f36d64 100%); background: -o-linear-gradient(top,  #d01d10 0%,#f36d64 100%); background: -ms-linear-gradient(top,  #d01d10 0%,#f36d64 100%); background: linear-gradient(to bottom,  #d01d10 0%,#f36d64 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d01d10', endColorstr='#f36d64',GradientType=0 ); }
+.perch-button.orange { background: #fa9e19; background: -moz-linear-gradient(top,  #fa9e19 0%, #fb6909 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa9e19), color-stop(100%,#fb6909)); background: -webkit-linear-gradient(top,  #fa9e19 0%,#fb6909 100%); background: -o-linear-gradient(top,  #fa9e19 0%,#fb6909 100%); background: -ms-linear-gradient(top,  #fa9e19 0%,#fb6909 100%); background: linear-gradient(to bottom,  #fa9e19 0%,#fb6909 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa9e19', endColorstr='#fb6909',GradientType=0 ); border: 1px solid #FB6909; }
+.perch-button.orange span.perch-button-inner { border-top: 1px solid #fcc87d }
+.perch-button.orange:active { background: #fb6909; background: -moz-linear-gradient(top,  #fb6909 0%, #fa9e19 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fb6909), color-stop(100%,#fa9e19)); background: -webkit-linear-gradient(top,  #fb6909 0%,#fa9e19 100%); background: -o-linear-gradient(top,  #fb6909 0%,#fa9e19 100%); background: -ms-linear-gradient(top,  #fb6909 0%,#fa9e19 100%); background: linear-gradient(to bottom,  #fb6909 0%,#fa9e19 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb6909', endColorstr='#fa9e19',GradientType=0 ); }
+.perch-button.blue { background: #1571f0; background: -moz-linear-gradient(top,  #41a7fc 0%, #1571f0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41a7fc), color-stop(100%,#1571f0)); background: -webkit-linear-gradient(top,  #41a7fc 0%,#1571f0 100%); background: -o-linear-gradient(top,  #41a7fc 0%,#1571f0 100%); background: -ms-linear-gradient(top,  #41a7fc 0%,#1571f0 100%); background: linear-gradient(to bottom,  #41a7fc 0%,#1571f0 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41a7fc', endColorstr='#1571f0',GradientType=0 ); border: 1px solid #1a6dd7; }
+.perch-button.blue span.perch-button-inner { border-top: 1px solid #84c6fd }
+.perch-button.blue:active { background: #1571f0; background: -moz-linear-gradient(top,  #1571f0 0%, #41a7fc 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1571f0), color-stop(100%,#41a7fc)); background: -webkit-linear-gradient(top,  #1571f0 0%,#41a7fc 100%); background: -o-linear-gradient(top,  #1571f0 0%,#41a7fc 100%); background: -ms-linear-gradient(top,  #1571f0 0%,#41a7fc 100%); background: linear-gradient(to bottom,  #1571f0 0%,#41a7fc 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1571f0', endColorstr='#41a7fc',GradientType=0 ); }
+.perch-button.rosy { background: #f295a2; background: -moz-linear-gradient(top,  #ee7787 0%, #e84a5f 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee7787), color-stop(100%,#e84a5f)); background: -webkit-linear-gradient(top,  #ee7787 0%,#e84a5f 100%); background: -o-linear-gradient(top,  #ee7787 0%,#e84a5f 100%); background: -ms-linear-gradient(top,  #ee7787 0%,#e84a5f 100%); background: linear-gradient(to bottom,  #ee7787 0%,#e84a5f 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee7787', endColorstr='#e84a5f',GradientType=0 ); border: 1px solid #e84a5f; }
+.perch-button.rosy:active { background: #e84a5f; background: -moz-linear-gradient(top,  #e84a5f 0%, #ee7787 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e84a5f), color-stop(100%,#ee7787)); background: -webkit-linear-gradient(top,  #e84a5f 0%,#ee7787 100%); background: -o-linear-gradient(top,  #e84a5f 0%,#ee7787 100%); background: -ms-linear-gradient(top,  #e84a5f 0%,#ee7787 100%); background: linear-gradient(to bottom,  #e84a5f 0%,#ee7787 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e84a5f', endColorstr='#ee7787',GradientType=0 ); }
+.perch-button.rosy span.perch-button-inner { border-top: 1px solid #f3a4af }
+.perch-button.pink { background: #e3618d; background: -moz-linear-gradient(top,  #e3618d 0%, #cb245c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3618d), color-stop(100%,#cb245c)); background: -webkit-linear-gradient(top,  #e3618d 0%,#cb245c 100%); background: -o-linear-gradient(top,  #e3618d 0%,#cb245c 100%); background: -ms-linear-gradient(top,  #e3618d 0%,#cb245c 100%); background: linear-gradient(to bottom,  #e3618d 0%,#cb245c 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3618d', endColorstr='#cb245c',GradientType=0 ); border: 1px solid #cb245c; }
+.perch-button.pink:active { background: #cb245c; background: -moz-linear-gradient(top,  #cb245c 0%, #e3618d 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb245c), color-stop(100%,#e3618d)); background: -webkit-linear-gradient(top,  #cb245c 0%,#e3618d 100%); background: -o-linear-gradient(top,  #cb245c 0%,#e3618d 100%); background: -ms-linear-gradient(top,  #cb245c 0%,#e3618d 100%); background: linear-gradient(to bottom,  #cb245c 0%,#e3618d 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb245c', endColorstr='#e3618d',GradientType=0 ); }
+.perch-button.pink span.perch-button-inner { border-top: 1px solid #eb8cac }
+.perch-button.green { color: #fff; background: #88dd48; background: -moz-linear-gradient(top,  #88dd48 0%, #5fb139 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#88dd48), color-stop(100%,#5fb139)); background: -webkit-linear-gradient(top,  #88dd48 0%,#5fb139 100%); background: -o-linear-gradient(top,  #88dd48 0%,#5fb139 100%); background: -ms-linear-gradient(top,  #88dd48 0%,#5fb139 100%); background: linear-gradient(to bottom,  #88dd48 0%,#5fb139 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88dd48', endColorstr='#5fb139',GradientType=0 ); border-color: #60AE40; }
+.perch-button.green span.perch-button-inner { border-top: 1px solid #b7ea90 }
+.perch-button.green:active { background: #5fb139; background: -moz-linear-gradient(top,  #5fb139 0%, #88dd48 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5fb139), color-stop(100%,#88dd48)); background: -webkit-linear-gradient(top,  #5fb139 0%,#88dd48 100%); background: -o-linear-gradient(top,  #5fb139 0%,#88dd48 100%); background: -ms-linear-gradient(top,  #5fb139 0%,#88dd48 100%); background: linear-gradient(to bottom,  #5fb139 0%,#88dd48 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fb139', endColorstr='#88dd48',GradientType=0 ); }
+.perch-button.brown { background: #876565; background: -moz-linear-gradient(top,  #876565 0%, #604848 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#876565), color-stop(100%,#604848)); background: -webkit-linear-gradient(top,  #876565 0%,#604848 100%); background: -o-linear-gradient(top,  #876565 0%,#604848 100%); background: -ms-linear-gradient(top,  #876565 0%,#604848 100%); background: linear-gradient(to bottom,  #876565 0%,#604848 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#876565', endColorstr='#604848',GradientType=0 ); border: 1px solid #604848; }
+.perch-button.brown:active { background: #604848; background: -moz-linear-gradient(top,  #604848 0%, #876565 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#604848), color-stop(100%,#876565)); background: -webkit-linear-gradient(top,  #604848 0%,#876565 100%); background: -o-linear-gradient(top,  #604848 0%,#876565 100%); background: -ms-linear-gradient(top,  #604848 0%,#876565 100%); background: linear-gradient(to bottom,  #604848 0%,#876565 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#604848', endColorstr='#876565',GradientType=0 ); }
+.perch-button.brown span.perch-button-inner { border-top: 1px solid #ae9393 }
+.perch-button.purple { background: #524656; background: -moz-linear-gradient(top,  #635569 0%, #372f3a 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#635569), color-stop(100%,#372f3a)); background: -webkit-linear-gradient(top,  #635569 0%,#372f3a 100%); background: -o-linear-gradient(top,  #635569 0%,#372f3a 100%); background: -ms-linear-gradient(top,  #635569 0%,#372f3a 100%); background: linear-gradient(to bottom,  #635569 0%,#372f3a 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#635569', endColorstr='#372f3a',GradientType=0 ); border: 1px solid #372f3a; }
+.perch-button.purple:active { background: #372f3a; background: -moz-linear-gradient(top,  #372f3a 0%, #635569 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#372f3a), color-stop(100%,#635569)); background: -webkit-linear-gradient(top,  #372f3a 0%,#635569 100%); background: -o-linear-gradient(top,  #372f3a 0%,#635569 100%); background: -ms-linear-gradient(top,  #372f3a 0%,#635569 100%); background: linear-gradient(to bottom,  #372f3a 0%,#635569 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#372f3a', endColorstr='#635569',GradientType=0 ); }
+.perch-button.purple span.perch-button-inner { border-top: 1px solid #7e6c85 }
+.perch-button.gold { background: #ffc750; background: -moz-linear-gradient(top,  #ffc750 0%, #faaa00 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc750), color-stop(100%,#faaa00)); background: -webkit-linear-gradient(top,  #ffc750 0%,#faaa00 100%); background: -o-linear-gradient(top,  #ffc750 0%,#faaa00 100%); background: -ms-linear-gradient(top,  #ffc750 0%,#faaa00 100%); background: linear-gradient(to bottom,  #ffc750 0%,#faaa00 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc750', endColorstr='#faaa00',GradientType=0 ); border: 1px solid #faaa00; }
+.perch-button.gold:active { background: #faaa00; background: -moz-linear-gradient(top,  #faaa00 0%, #ffc750 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#faaa00), color-stop(100%,#ffc750)); background: -webkit-linear-gradient(top,  #faaa00 0%,#ffc750 100%); background: -o-linear-gradient(top,  #faaa00 0%,#ffc750 100%); background: -ms-linear-gradient(top,  #faaa00 0%,#ffc750 100%); background: linear-gradient(to bottom,  #faaa00 0%,#ffc750 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faaa00', endColorstr='#ffc750',GradientType=0 ); }
+.perch-button.gold span.perch-button-inner { color: #9C6533; text-shadow: 1px 1px 1px #ffe2a5; border-top: 1px solid #ffd783; }
+.perch-button.teal { background: #3c9091; background: -moz-linear-gradient(top,  #3c9091 0%, #286061 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3c9091), color-stop(100%,#286061)); background: -webkit-linear-gradient(top,  #3c9091 0%,#286061 100%); background: -o-linear-gradient(top,  #3c9091 0%,#286061 100%); background: -ms-linear-gradient(top,  #3c9091 0%,#286061 100%); background: linear-gradient(to bottom,  #3c9091 0%,#286061 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c9091', endColorstr='#286061',GradientType=0 ); border: 1px solid #286061; }
+.perch-button.teal:active { background: #286061; background: -moz-linear-gradient(top,  #286061 0%, #3c9091 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#286061), color-stop(100%,#3c9091)); background: -webkit-linear-gradient(top,  #286061 0%,#3c9091 100%); background: -o-linear-gradient(top,  #286061 0%,#3c9091 100%); background: -ms-linear-gradient(top,  #286061 0%,#3c9091 100%); background: linear-gradient(to bottom,  #286061 0%,#3c9091 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#286061', endColorstr='#3c9091',GradientType=0 ); }
+.perch-button.teal span.perch-button-inner { border-top: 1px solid #63bdbf }
+.perch-button.navy { background: #2c76cf; background: -moz-linear-gradient(top,  #2c76cf 0%, #1d4e89 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c76cf), color-stop(100%,#1d4e89)); background: -webkit-linear-gradient(top,  #2c76cf 0%,#1d4e89 100%); background: -o-linear-gradient(top,  #2c76cf 0%,#1d4e89 100%); background: -ms-linear-gradient(top,  #2c76cf 0%,#1d4e89 100%); background: linear-gradient(to bottom,  #2c76cf 0%,#1d4e89 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c76cf', endColorstr='#1d4e89',GradientType=0 ); border: 1px solid #1d4e89; }
+.perch-button.navy:active { background: #1d4e89; background: -moz-linear-gradient(top,  #1d4e89 0%, #2c76cf 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d4e89), color-stop(100%,#2c76cf)); background: -webkit-linear-gradient(top,  #1d4e89 0%,#2c76cf 100%); background: -o-linear-gradient(top,  #1d4e89 0%,#2c76cf 100%); background: -ms-linear-gradient(top,  #1d4e89 0%,#2c76cf 100%); background: linear-gradient(to bottom,  #1d4e89 0%,#2c76cf 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4e89', endColorstr='#2c76cf',GradientType=0 ); }
+.perch-button.navy span.perch-button-inner { border-top: 1px solid #619ade }
+.perch-button { font-size: 13px }
+.perch-button.medium { font-size: 18px }
+.perch-button.large { font-size: 24px }
+.perch-button.left { float: left }
+.perch-button.right { float: right; margin-right: 0; margin-left: 5px; }
+.perch-button.aligncenter { display: block; margin: 0 auto; }
+.perch-button-icon-left { margin-right: 7px; }
+.perch-button-icon-right { margin-left: 7px; }
+/* Testimonial
+================================================== */
+.perch-testimonial-content { font-style: italic; position: relative; background: #f5f5f5; padding: 15px; color: #666; border-radius: 2px; -webkit-border-radius: 2px; }
+.perch-testimonial-content:after { content: ""; position: absolute; left: 12px; bottom: -15px; width: 0px; height: 0px; border-bottom: 15px solid rgba(255,255,255,0); border-top: 15px solid rgba(255,255,255,0); border-right: 15px solid #f5f5f5; font-size: 0px; line-height: 0px; }
+.perch-testimonial-content p:last-child { margin: 0 }
+.perch-testimonial-author { font-size: 1em; margin-top: 25px; margin-left: 15px; color: #000; font-weight: bold; }
+/* Highlights
+================================================== */
+.perch-highlight-yellow, .perch-highlight-yellow a { background-color: #FFF7A8; color: #695D43; }
+.perch-highlight-blue, .perch-highlight-blue a { color: #5091b2; background: #e9f7fe; }
+.perch-highlight-green, .perch-highlight-green a { color: #5f9025; background: #ebf6e0; }
+.perch-highlight-red, .perch-highlight-red a { color: #de5959; background: #ffe9e9; }
+.perch-highlight-gray, .perch-highlight-gray a { color: #666; background: #f9f9f9; }
+/* Boxes
+================================================== */
+/*main*/
+.perch-box { display: block; padding: 15px; margin: 10px 0; font-size: 1em; border-radius: 2px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.perch-box p:last-child { margin: 0 }
+/*aligns*/
+.perch-box.center { margin-left: auto; margin-right: auto; }
+.perch-box.left { float: left }
+.perch-box.right { float: right }
+/*colors*/
+.perch-box.gray { color: #666; background: #f9f9f9; border: 1px solid #ddd; }
+.perch-box.red { color: #de5959; background: #ffe9e9; border: 1px solid #fbc4c4; }
+.perch-box.green { color: #5f9025; background: #ebf6e0; border: 1px solid #b3dc82; }
+.perch-box.blue { color: #5091b2; background: #e9f7fe; border: 1px solid #b6d7e8; }
+.perch-box.yellow { color: #c4690e; background: #fffdf3; border: 1px solid #f2dfa4; }
+.perch-box.black { color: #fff; background: #000; }
+.perch-box.black a { color: #fff; text-decoration: underline; }
+/* Toggle
+================================================== */
+.perch-toggle .perch-toggle-trigger { display: block; color: #555; display: block; padding: 15px 15px 15px 37px; border: 1px solid #ddd; background: #f9f9f9 url("images/plus.png") no-repeat 15px center; outline: 0; text-transform: none; letter-spacing: normal; font-weight: normal; font-size: 1em; line-height: 1.5em; margin: 0; margin-top: 10px; cursor: pointer; }
+.perch-toggle .perch-toggle-trigger:hover { background-color: #f7f8fa; text-decoration: none; }
+.perch-toggle .perch-toggle-trigger.active, .perch-toggle .perch-toggle-trigger.active:hover { color: #000; background-color: #f7f8fa; background-image: url("images/minus.png"); text-decoration: none; }
+.perch-toggle .perch-toggle-container { display: none; overflow: hidden; padding: 15px; border: 1px solid #ddd; border-top: 0px; }
+/* Accordion
+================================================== */
+.perch-accordion h3.perch-accordion-trigger { display: block; color: #555; display: block; padding: 15px 15px 15px 37px; border: 1px solid #ddd; background: #f9f9f9 url("images/plus.png") no-repeat 15px center; outline: 0; text-transform: none; letter-spacing: normal; font-weight: normal; font-size: 1em; line-height: 1.5em; margin: 10px 0 0 !important; cursor: pointer; }
+.perch-accordion h3.perch-accordion-trigger a { color: #555; text-decoration: none !important; }
+.perch-accordion .ui-state-focus { outline: none }
+.perch-accordion .perch-accordion-trigger:hover { background-color: #f7f8fa; text-decoration: none; }
+.perch-accordion .perch-accordion-trigger.ui-state-active { background-color: #f7f8fa; background-image: url("images/minus.png"); text-decoration: none; }
+.perch-accordion .perch-accordion-trigger.ui-state-active a { color: #000 }
+.perch-accordion .ui-accordion-content { background-color: #fff; padding: 15px; border: 1px solid #ddd; border-top: 0px; }
+.perch-accordion .ui-accordion-content p:last-child { margin: 0px }
+.perch-accordion .ui-icon { margin-right: 7px }
+/* Tabs
+================================================== */
+.perch-tabs ul.ui-tabs-nav { display: block; margin: 0; padding: 0; border-bottom: solid 1px #ddd; margin-left: 1px; }
+.perch-tabs ul.ui-tabs-nav li { display: block; width: auto; height: 40px; padding: 0 !important; float: left !important; margin: 0 !important; outline: none; }
+.perch-tabs ul.ui-tabs-nav li a { display: block; text-decoration: none; width: auto; height: 39px; padding: 0px 20px; line-height: 40px; border: solid 1px #ddd; border-width: 1px 1px 0 0; margin: 0; background-color: #f5f5f5; font-size: 1em; color: #444; outline: none; }
+.perch-tabs ul.ui-tabs-nav li a:hover { color: #333; background: #f7f8fa; }
+.perch-tabs ul.ui-tabs-nav .ui-state-active a { background: #fff; height: 40px; position: relative; top: -4px; padding-top: 4px; border-left-width: 1px; margin: 0 0 0 -1px; color: #111 !important; -moz-border-radius-topleft: 2px; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; }
+.perch-tabs ul.ui-tabs-nav .ui-state-active a:hover { background: #fff }
+.perch-tabs ul.ui-tabs-nav li:first-child .ui-state-active a { margin-left: 0 }
+.perch-tabs ul.ui-tabs-nav li:first-child a { border-width: 1px 1px 0 1px }
+.perch-tabs .tab-content { background: #fff; padding: 20px; border-left: solid 1px #ddd; border-right: solid 1px #ddd; border-bottom: solid 1px #ddd; }
+.perch-tabs ul.tabs:before, ul.tabs:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.perch-tabs ul.tabs:after { clear: both }
+.perch-tabs ul.tabs { zoom: 1 }
+.perch-tabs .ui-tabs-hide { display: none }
+.perch-tabs:before, ul.perch-tabs:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.perch-tabs:after { clear: both }
+.perch-tabs { zoom: 1 }
+.perch-tabs .ui-tabs-hide { display: none }
+/* Pricing Table
+================================================== */
+.perch-pricing-table { list-style: none; margin: 0; padding: 0; font-size: 16px; }
+.perch-pricing-table div { list-style: none }
+.perch-pricing-table > div { margin-right: 4%; list-style: none; text-shadow: none; margin-bottom: 0; border: 1px solid #ddd; box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); }
+.perch-pricing-table .perch-pricing-header { background: #333; text-align: center; padding: 20px 0; border-bottom: 1px solid #111; }
+.perch-pricing-table .perch-pricing-header h5 { color: #fff; font-size: 1.313em; margin: 0; padding: 0 20px 10px; font-weight: bold; border-bottom: 1px solid #111; }
+.perch-pricing-table .perch-pricing-cost { color: #fff; font-size: 1.500em; line-height: 1em; padding-top: 20px; border-top: 1px solid #444; }
+.perch-pricing-table .featured .perch-pricing-header { background: #fd5c41; margin: -1px; color: #fff; border-bottom: 1px solid #e72302; }
+.perch-pricing-table .featured .perch-pricing-header h5 { color: #fff; border-bottom: 1px solid #e72302; }
+.perch-pricing-table .featured .perch-pricing-cost { border-top: 1px solid #fe8773 }
+.perch-pricing-table .perch-pricing-per { font-size: 0.786em; color: #fff; }
+.perch-pricing-table .perch-pricing-content { background: #fff; font-size: 0.857em; text-align: center; }
+.perch-pricing-table .perch-pricing-content ul { margin: 0 !important; list-style: none !important; }
+.perch-pricing-table .perch-pricing-content ul li { margin: 0 !important; padding: 10px 20px !important; border-bottom: 1px solid #f7f8fa; list-style: none !important; }
+.perch-pricing-table .perch-pricing-content ul li:nth-child(2n+2) { background: #f9f9f9 }
+.perch-pricing-table .perch-pricing-button { background: #fff; text-align: center; border-top: 1px solid #fff; padding: 20px; }
+.perch-pricing-table .perch-pricing-button .perch-button { float: none; margin: 0 auto; }
+/* Heading - v1.1
+================================================== */
+.perch-heading { padding-bottom: 20px; border-bottom: 1px solid #ddd; font-size: 16px; }
+.perch-heading span { background: #fff; }
+.perch-heading span i{ width: auto; height: auto; line-height: inherit; font-size: inherit; }
+.perch-heading-dotted-line { background: url("images/dotted.png") center center repeat-x; height: 40px !important; line-height: 40px !important; padding: 0 !important; border-bottom: none; }
+.perch-heading-dashed-line { background: url("images/dashed.png") center center repeat-x; height: 40px !important; line-height: 40px !important; padding: 0 !important; border-bottom: none; }
+.perch-heading-double-line { background: url("images/double-line.png") center center repeat-x; height: 40px !important; line-height: 40px !important; padding: 0 !important; border-bottom: none; }
+.perch-heading.text-align-center { text-align: center }
+.perch-heading.text-align-center span { padding-right: 15px; padding-left: 15px; }
+.perch-heading.text-align-left { text-align: left }
+.perch-heading.text-align-left span { padding-right: 15px; }
+.perch-heading.text-align-right { text-align: right }
+.perch-heading.text-align-right span { padding-left: 15px; }
+.perch-heading-icon-left { margin-right: 10px; }
+.perch-heading-icon-right { margin-left: 10px; }
+/* Googlemap - v1.1
+================================================== */
+.googlemap { position: relative; max-width: inherit; }
+.googlemap .map_canvas { width: 100%; height: 100%; }
+.googlemap .map_canvas h3 { margin: 0 0 10px; font-size: 14px; }
+.map_canvas img { max-width: none !important }
+/* Divider - v1.1
+================================================== */
+.perch-divider { display: block; width: 100%; height: 0; margin: 0; background: none; overflow: hidden; }
+.perch-divider.solid { border-top: 1px solid #f7f8fa }
+.perch-divider.dashed { border-top: 2px dashed #f7f8fa }
+.perch-divider.dotted { border-top: 3px dotted #f7f8fa }
+.perch-divider.double { height: 5px; border-top: 1px solid #f7f8fa; border-bottom: 1px solid #f7f8fa; }
+.perch-divider.fadeout { width: 100%; height: 1px; border: none; margin-bottom: 42px; margin-top: 12px; margin-left: auto; margin-right: auto; background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#f7f8faeee), to(#ffffff)); background-image: -webkit-radial-gradient(50% 50%, #f7f8faeee, #ffffff); background-image: -moz-radial-gradient(50% 50%, #f7f8faeee, #ffffff); background-image: -o-radial-gradient(50% 50%, #f7f8faeee, #ffffff); background-image: -ms-radial-gradient(50% 50%, #f7f8faeee, #ffffff); background-image: radial-gradient(50% 50%, #f7f8faeee, #ffffff); }
+.perch-divider.fadein { width: 100%; height: 1px; border: none; margin-bottom: 42px; margin-top: 12px; margin-left: auto; margin-right: auto; background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#ffffff), to(#f7f8faeee)); background-image: -webkit-radial-gradient(50% 50%, #ffffff, #f7f8faeee); background-image: -moz-radial-gradient(50% 50%, #ffffff, #f7f8faeee); background-image: -o-radial-gradient(50% 50%, #ffffff, #f7f8faeee); background-image: -ms-radial-gradient(50% 50%, #ffffff, #f7f8faeee); background-image: radial-gradient(50% 50%, #ffffff, #f7f8faeee); }
+/* Skillbars - 1.3
+================================================== */
+.perch-skillbar { position: relative; display: block; margin-bottom: 15px; width: 100%; background: #f7f8fa; height: 35px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: 0.4s linear; -moz-transition: 0.4s linear; -ms-transition: 0.4s linear; -o-transition: 0.4s linear; transition: 0.4s linear; -webkit-transition-property: width, background-color; -moz-transition-property: width, background-color; -ms-transition-property: width, background-color; -o-transition-property: width, background-color; transition-property: width, background-color; }
+.perch-skillbar-title { position: absolute; top: 0; left: 0; font-weight: bold; font-size: 13px; color: #fff; background: #6adcfa; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+.perch-skillbar-title span { display: block; background: rgba(0,0,0,0.1); padding: 0 20px; height: 35px; line-height: 35px; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+.perch-skillbar-bar { height: 35px; width: 0px; background: #6adcfa; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.perch-skill-bar-percent { position: absolute; right: 10px; top: 0; font-size: 11px; height: 35px; line-height: 35px; color: #444; color: rgba(0,0,0,0.4); }
+/* Callout - 1.4
+================================================== */
+.perch-callout { padding: 20px; background: #f7f8fa; position: relative; border-radius: 3px; }
+.perch-callout-caption { font-size: 1.6em; line-height: 1.3em; font-weight: 400; color: #555; }
+.perch-callout-button { float: right; margin-left: 20px; margin-bottom: 0; }
+.perch-callout-button .button { height: 40px; line-height: 40px; }
+/* Provide some responsive support for the Symple Shortcodes
+================================================== */
+@media only screen and (max-width: 520px) { 
+	.perch-one-half, .perch-one-third, .perch-two-third, .perch-three-fourth, .perch-one-fourth, .perch-one-fifth, .perch-two-fifth, .perch-three-fifth, .perch-four-fifth, .perch-one-sixth, .perch-five-sixth { width: 100%; float: none; margin-right: 0; margin-bottom: 20px; }
+	.perch-pricing-table > div { margin-bottom: 25px }
+	.perch-box, .perch-box.left, .perch-box.right { float: none; width: 100% !important; }
+	.perch-tabs ul.ui-tabs-nav { margin-left: 0 }
+	.perch-tabs ul.ui-tabs-nav li { width: 100% }
+	.perch-tabs ul.ui-tabs-nav li a { border-left-width: 1px }
+	.perch-tabs ul.ui-tabs-nav .ui-state-active a, .perch-tabs ul.ui-tabs-nav .ui-state-active a:hover { height: 39px; padding-top: 0; margin-left: 0; top: auto; background-color: #f7f8fa; color: #000; font-weight: bold; }
+	.perch-callout-caption { text-align: center }
+	.perch-callout-button { float: none; margin-bottom: 20px; display: block; text-align: center; }
+	.perch-callout-button .perch-button { display: inline-block; }
+}
+/*Visibility
+================================================== */
+.perch-hidden-desktop,
+.perch-visible-phone,
+.perch-visible-tablet { display: none }
+@media only screen and (max-width: 959px) {
+	.perch-hidden-desktop { display: block }
+	.perch-visible-desktop { display: none }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.perch-hidden-desktop { display: block }
+	.perch-visible-desktop { display: none }
+	.perch-hidden-tablet { display: none }
+}
+@media only screen and (max-width: 767px) {
+	.perch-hidden-desktop { display: block }
+	.perch-visible-desktop { display: none }
+	.perch-hidden-phone { display: none }
+}
+
+.perch-social-icon{
+	background: #008ed6;
+	color: #fff;
+    line-height: 17px;
+    padding: 5px 0;
+    text-align: center;
+    width: 30px;
+    max-height: 30px;
+}
+
+.perch-social-icon:hover{
+	color: #fff;
+	opacity: .9;
+}
+
+.perch-box{
+	color: #fff;
+	overflow: hidden;
+}

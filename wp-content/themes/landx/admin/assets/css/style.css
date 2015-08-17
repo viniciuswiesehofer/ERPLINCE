@@ -1,0 +1,124 @@
+.perch-shortcode-field{
+	width: 100%;
+	clear: both;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.perch-shortcode-field label{
+	float: left;
+	width: 35%;
+	padding-bottom: 5px;
+}
+
+.perch-shortcode-field textarea,
+.perch-shortcode-field input[type="text"]{
+	width: 64%;
+	float: left;
+}
+
+#TB_window{
+	z-index: 1000500;
+}
+
+#TB_overlay{
+	z-index: 1000500;
+}
+
+
+
+/*custom option tre css*/
+
+#option-tree-settings-api > .ui-tabs {
+  -webkit-box-shadow: inset 196px 0 0 #f1f1f1, inset 147px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05) !important;
+     -moz-box-shadow: inset 196px 0 0 #f1f1f1, inset 147px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05) !important;
+          box-shadow: inset 196px 0 0 #f1f1f1, inset 147px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05) !important;
+
+}
+
+#option-tree-header-wrap{
+  max-width: 1000px !important;
+}
+
+
+#option-tree-sub-header,
+.option-tree-ui-buttons{
+   max-width: 980px !important;
+}
+
+#option-tree-settings-api > .ui-tabs{
+   max-width: 990px !important;
+}
+
+.wrap.settings-wrap .ui-tabs-nav{
+  width: 200px !important;
+}
+
+.wrap.settings-wrap .ui-tabs-nav li a{
+  background-repeat: no-repeat;
+  padding-left: 40px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+#tab_general_options a{ background-image: url(../images/icon-settings.png); background-position: 12px center; }
+#tab_header_options a{  background-image: url(../images/icon-header.png);  background-position: 12px center;}
+#tab_footer_options a{  background-image: url(../images/icon-footer.png); background-position: 12px center; }
+#tab_background_options a{  background-image: url(../images/background.png); background-position: 12px center; }
+#tab_fonts a{  background-image: url(../images/icon-typography.png); background-position: 12px center; }
+#tab_blog_options a{ background-image: url(../images/blog.png); background-position: 12px center; }
+#tab_page_options a{  background-image: url(../images/icon-portfolio.png); background-position: 12px center; }
+#tab_social_sharing_links a{ background-image: url(../images/social_links_icon.png); background-position: 12px center; }
+#tab_sidebar_option a{ background-image: url(../images/sidebar.png); background-position: 12px center; }
+#tab_front_options a{ background-image: url(../images/icon-slider.png); background-position: 12px center; }
+#tab_client_slider a{   background-image: url(../images/icon-slider.png); background-position: 12px center; }
+#tab_styling_options a{ background-image: url(../images/styling.png); background-position: 12px center; }
+#tab_custom_css a{  background-image: url(../images/css.png); background-position: 12px center; }
+#tab_theme_text a{  background-image: url(../images/extra.png); background-position: 12px center; }
+
+.type-radio-image .option-tree-ui-radio-images img{
+  max-width: 60px;
+}
+
+.ext-menu{
+  display: none;
+}
+
+#option-tree-header #option-tree-logo a{
+  background: url(../images/logo.png) no-repeat center;
+  text-indent: -999999px;
+}
+
+#adminmenu #toplevel_page_ot-settings .menu-icon-generic div.wp-menu-image::before, 
+#option-tree-header #option-tree-logo a::before{
+  content: "" !important;
+}
+
+#option-tree-header #option-tree-logo a{
+  min-height: 50px;
+  min-width: 50px;
+}
+
+#option-tree-header #option-tree-version span, 
+#option-tree-header #theme-version span{
+  line-height: 50px !important;
+  min-height: 50px !important;
+  text-transform: uppercase;
+}
+
+.hide-field-wrap{
+  display: none;
+}
+
+#option-tree-header li#option-tree-logo{
+  min-width: 145px;
+}
+
+#option-tree-header li#option-tree-logo a{
+  width: 100%;
+  padding: 0;
+  border-right: none;
+}
+
+form#option-tree-options-layouts-form{
+  top: 57px;
+}

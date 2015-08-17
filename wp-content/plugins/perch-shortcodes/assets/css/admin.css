@@ -1,0 +1,101 @@
+/**
+ * PerchShortcodes Admin
+ * Author: ThemePerch
+ * Author URI: http://www.themeperch.com
+ */
+
+.tpsc-shortcode-wrap table { width: 100%; }
+
+.tpsc-shortcode-wrap .tpsc-sortable table {
+	background: #f7f7f7;
+	border-radius: 3px;
+	border: 1px solid #e0e0e0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: move;
+	margin-bottom: 10px;
+	padding: 15px;
+}
+
+.tpsc-shortcode-wrap .tpsc-sortable .tpsc-sortable-placeholder {
+	background: #f7f7f7;
+	border: dashed 2px #e0e0e0;
+	border-radius: 3px;
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.tpsc-shortcode-wrap td {
+	padding: 8px 0;
+	vertical-align: top;
+}
+
+.tpsc-shortcode-wrap .label { padding-top: 13px; }
+
+#insert-button-shortcode label {
+	display: inline-block;
+	width: 20%;
+}
+
+.tpsc-shortcode-select { margin: 10px 0 30px 0; }
+
+.tpsc-shortcode-wrap input[type="text"],
+.tpsc-shortcode-wrap textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.perch-form-desc {
+	color: #aaa;
+	display: block;
+	font-size:  12px;
+	font-style: italic;
+	padding-top: 3px;
+}
+
+.tpsc-notes { font-style: italic; }
+
+.tpsc-shortcode-wrap .tpsc-cancel-shortcode-insert { margin-left: 1.25em; }
+
+.perch-form-slider{
+	max-width: 9%;
+	float: right;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+
+.ui-slider { position: relative; text-align: left; background: #ddd; border: 1px solid #ccc; max-width: 90%; margin-top: 5px;}
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; border: 1px solid #ccc; background: #ddd; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0;  background-color: #fff;}
+
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+.featuredgallerydiv img{
+	max-width: 100px;
+	max-height: 100px;
+	width: auto;
+}
+
+.featuredgallerydiv li .media-modal-icon{
+	display: none;
+}
+
+
+.featuredgallerydiv li{
+	display: inline-block;
+	padding: 5px;
+}

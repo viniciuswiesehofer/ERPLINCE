@@ -1,0 +1,828 @@
+# Copyright (C) 2014 Iconize WordPress
+# This file is distributed under the same license as the Iconize WordPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Iconize WordPress 1.1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/iconize\n"
+"POT-Creation-Date: 2014-03-16 20:29:10+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class-iconize-wp.php:392
+msgid "Choose plugin components"
+msgstr ""
+
+#: class-iconize-wp.php:401
+msgid "Menus"
+msgstr ""
+
+#: class-iconize-wp.php:407
+msgid "Enable custom menus system integration?"
+msgstr ""
+
+#: class-iconize-wp.php:417
+msgid "Widgets"
+msgstr ""
+
+#: class-iconize-wp.php:422
+msgid "Enable widget system integration?"
+msgstr ""
+
+#: class-iconize-wp.php:432
+msgid "Editors"
+msgstr ""
+
+#: class-iconize-wp.php:438
+msgid "Enable plugin integration on editors?"
+msgstr ""
+
+#: class-iconize-wp.php:479
+msgid "Enable plugin integration on %1$s ( post type: %2$s )?"
+msgstr ""
+
+#: class-iconize-wp.php:495
+msgid ""
+"Here you can enable/disable Iconize WordPress plugin integration on specific "
+"WordPress system."
+msgstr ""
+
+#: class-iconize-wp.php:521
+msgid "Iconize Plugin Settings"
+msgstr ""
+
+#: class-iconize-wp.php:522
+msgid "Iconize Settings"
+msgstr ""
+
+#: class-iconize-wp.php:557
+msgid "Settings"
+msgstr ""
+
+#: class-iconize-wp.php:894 tinymce/langs/iconize-langs.php:4
+msgid "Insert/Edit icon"
+msgstr ""
+
+#: class-iconize-wp.php:900 tinymce/langs/iconize-langs.php:5
+msgid "Swap positions of stacked icons"
+msgstr ""
+
+#: class-iconize-wp.php:906 tinymce/langs/iconize-langs.php:6
+msgid "Swap sizes of stacked icons"
+msgstr ""
+
+#: class-iconize-wp.php:912
+msgid "Delete icon"
+msgstr ""
+
+#: class-iconize-wp.php:1109
+msgid "Clear"
+msgstr ""
+
+#: class-iconize-wp.php:1110
+msgid "Default"
+msgstr ""
+
+#: class-iconize-wp.php:1111
+msgid "Select Color"
+msgstr ""
+
+#: class-iconize-wp.php:1193
+msgid "Title Icon:"
+msgstr ""
+
+#: class-iconize-wp.php:1352
+msgid "Menu Item Icon: "
+msgstr ""
+
+#: class-iconize-wp.php:1495 class-iconize-wp.php:1545
+msgid "Icon: "
+msgstr ""
+
+#: class-iconize-wp.php:1708
+msgid "No categories"
+msgstr ""
+
+#: class-iconize-wp.php:1716
+msgid "Categories"
+msgstr ""
+
+#: class-iconize-wp.php:2415
+msgid "Add icon"
+msgstr ""
+
+#: class-iconize-wp.php:2416
+msgid "Insert icon"
+msgstr ""
+
+#: class-iconize-wp.php:2417
+msgid "Edit icon"
+msgstr ""
+
+#: class-iconize-wp.php:2418
+msgid "Update icon"
+msgstr ""
+
+#: class-iconize-wp.php:2419 tinymce/langs/iconize-langs.php:7
+msgid "Remove icon"
+msgstr ""
+
+#: class-iconize-wp.php:2420
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:208
+msgid "Cancel"
+msgstr ""
+
+#: class-iconize-wp.php:2421
+msgid "Create icon stack with selected and existing icons"
+msgstr ""
+
+#: class-iconize-wp.php:2424
+msgid "Change set:"
+msgstr ""
+
+#: class-iconize-wp.php:2425
+msgid "Search by name:"
+msgstr ""
+
+#: class-iconize-wp.php:2426
+msgid "Icon effect:"
+msgstr ""
+
+#: class-iconize-wp.php:2427
+msgid "Icon color:"
+msgstr ""
+
+#: class-iconize-wp.php:2428
+msgid "Icon size:"
+msgstr ""
+
+#: class-iconize-wp.php:2429
+msgid "Icon align:"
+msgstr ""
+
+#: class-iconize-wp.php:2430
+msgid ""
+"Icon custom classes ( type CSS class names without dots, separate them by "
+"hitting enter/space/comma key ):"
+msgstr ""
+
+#: class-iconize-wp.php:2431
+msgid "Stack size:"
+msgstr ""
+
+#: class-iconize-wp.php:2432
+msgid "Stack align:"
+msgstr ""
+
+#: class-iconize-wp.php:2435
+#: includes/widgets/class-iconize-widget-taxonomies.php:278
+msgid "Transformation"
+msgstr ""
+
+#: class-iconize-wp.php:2436
+#: includes/widgets/class-iconize-widget-taxonomies.php:292
+msgid "Animation"
+msgstr ""
+
+#: class-iconize-wp.php:2437
+#: includes/widgets/class-iconize-widget-taxonomies.php:306
+msgid "Hover Effect"
+msgstr ""
+
+#: class-iconize-wp.php:2440
+msgid ""
+"No icons defined.\n"
+"\n"
+"If you are trying to define your own icons, you're doing it wrong and you "
+"should read the documentation for Iconize plugin.\n"
+"\n"
+"If that's not the case you should contact the author."
+msgstr ""
+
+#: class-iconize-wp.php:2441
+msgid ""
+"No icon selected.\n"
+"\n"
+"To select icon simply click on one from the list or search for it by name "
+"using field on upper right corner of the dialog."
+msgstr ""
+
+#: class-iconize-wp.php:2442
+msgid ""
+"Something is wrong.\n"
+"\n"
+"Icon is missing font or name CSS class ( or both ). If you want to edit this "
+"icon, replace it with another one or add missing classes manually using HTML "
+"view."
+msgstr ""
+
+#: class-iconize-wp.php:2443
+msgid ""
+"The icon font and/or icon name found here is no longer available.\n"
+"\n"
+"You can insert new icon here, remove icon, or revert changes you have made "
+"to Iconize plugin."
+msgstr ""
+
+#: class-iconize-wp.php:2444
+msgid ""
+"Reserved CSS class name.\n"
+"\n"
+"You cannot use this class as custom, please type another class name."
+msgstr ""
+
+#: class-iconize-wp.php:2471 class-iconize-wp.php:2518
+msgid "Grow"
+msgstr ""
+
+#: class-iconize-wp.php:2472 class-iconize-wp.php:2519
+msgid "Shrink"
+msgstr ""
+
+#: class-iconize-wp.php:2473 class-iconize-wp.php:2525
+msgid "Rotate"
+msgstr ""
+
+#: class-iconize-wp.php:2474
+msgid "Rotate 90 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2475
+msgid "Rotate 180 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2476
+msgid "Rotate 270 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2477
+msgid "Flip Horizontal"
+msgstr ""
+
+#: class-iconize-wp.php:2478
+msgid "Flip Vertical"
+msgstr ""
+
+#: class-iconize-wp.php:2479 class-iconize-wp.php:2532
+msgid "Grow Rotate"
+msgstr ""
+
+#: class-iconize-wp.php:2480
+msgid "Grow Rotate 90 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2481
+msgid "Grow Rotate 180 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2482
+msgid "Grow Rotate 270 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2483
+msgid "Grow Flip Horizontal"
+msgstr ""
+
+#: class-iconize-wp.php:2484
+msgid "Grow Flip Hertical"
+msgstr ""
+
+#: class-iconize-wp.php:2485 class-iconize-wp.php:2539
+msgid "Shrink Rotate"
+msgstr ""
+
+#: class-iconize-wp.php:2486
+msgid "Shrink Rotate 90 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2487
+msgid "Shrink Rotate 180 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2488
+msgid "Shrink Rotate 270 deg"
+msgstr ""
+
+#: class-iconize-wp.php:2489
+msgid "Shrink Flip Horizontal"
+msgstr ""
+
+#: class-iconize-wp.php:2490
+msgid "Shrink Flip Hertical"
+msgstr ""
+
+#: class-iconize-wp.php:2491 class-iconize-wp.php:2563
+msgid "Skew"
+msgstr ""
+
+#: class-iconize-wp.php:2492 class-iconize-wp.php:2564
+msgid "Skew Forward"
+msgstr ""
+
+#: class-iconize-wp.php:2493 class-iconize-wp.php:2565
+msgid "Skew Backward"
+msgstr ""
+
+#: class-iconize-wp.php:2494 class-iconize-wp.php:2566
+msgid "Float"
+msgstr ""
+
+#: class-iconize-wp.php:2495 class-iconize-wp.php:2567
+msgid "Sink"
+msgstr ""
+
+#: class-iconize-wp.php:2496 class-iconize-wp.php:2570
+msgid "Float Shadow"
+msgstr ""
+
+#: class-iconize-wp.php:2500 class-iconize-wp.php:2522
+msgid "Pulse"
+msgstr ""
+
+#: class-iconize-wp.php:2501 class-iconize-wp.php:2523
+msgid "Pulse Grow"
+msgstr ""
+
+#: class-iconize-wp.php:2502 class-iconize-wp.php:2524
+msgid "Pulse Shrink"
+msgstr ""
+
+#: class-iconize-wp.php:2503 class-iconize-wp.php:2546
+msgid "Spin"
+msgstr ""
+
+#: class-iconize-wp.php:2504 class-iconize-wp.php:2547
+msgid "Spin Slower"
+msgstr ""
+
+#: class-iconize-wp.php:2505 class-iconize-wp.php:2548
+msgid "Spin Faster"
+msgstr ""
+
+#: class-iconize-wp.php:2506 class-iconize-wp.php:2549
+msgid "Spin CCW"
+msgstr ""
+
+#: class-iconize-wp.php:2507 class-iconize-wp.php:2550
+msgid "Spin Slower CCW"
+msgstr ""
+
+#: class-iconize-wp.php:2508 class-iconize-wp.php:2551
+msgid "Spin Faster CCW"
+msgstr ""
+
+#: class-iconize-wp.php:2509 class-iconize-wp.php:2552
+msgid "Buzz"
+msgstr ""
+
+#: class-iconize-wp.php:2510 class-iconize-wp.php:2568
+msgid "Hover"
+msgstr ""
+
+#: class-iconize-wp.php:2511 class-iconize-wp.php:2569
+msgid "Hang"
+msgstr ""
+
+#: class-iconize-wp.php:2512 class-iconize-wp.php:2571
+msgid "Hover Shadow"
+msgstr ""
+
+#: class-iconize-wp.php:2516
+msgid "Fade In"
+msgstr ""
+
+#: class-iconize-wp.php:2517
+msgid "Fade Out"
+msgstr ""
+
+#: class-iconize-wp.php:2520
+msgid "Pop"
+msgstr ""
+
+#: class-iconize-wp.php:2521
+msgid "Push"
+msgstr ""
+
+#: class-iconize-wp.php:2526
+msgid "Rotate 90"
+msgstr ""
+
+#: class-iconize-wp.php:2527
+msgid "Rotate 180"
+msgstr ""
+
+#: class-iconize-wp.php:2528
+msgid "Rotate 270"
+msgstr ""
+
+#: class-iconize-wp.php:2529
+msgid "Rotate 360"
+msgstr ""
+
+#: class-iconize-wp.php:2530
+msgid "Flip Horizontally"
+msgstr ""
+
+#: class-iconize-wp.php:2531
+msgid "Flip Vertically"
+msgstr ""
+
+#: class-iconize-wp.php:2533
+msgid "Grow Rotate 90"
+msgstr ""
+
+#: class-iconize-wp.php:2534
+msgid "Grow Rotate 180"
+msgstr ""
+
+#: class-iconize-wp.php:2535
+msgid "Grow Rotate 270"
+msgstr ""
+
+#: class-iconize-wp.php:2536
+msgid "Grow Rotate 360"
+msgstr ""
+
+#: class-iconize-wp.php:2537
+msgid "Grow Flip Horizontally"
+msgstr ""
+
+#: class-iconize-wp.php:2538
+msgid "Grow Flip Vertically"
+msgstr ""
+
+#: class-iconize-wp.php:2540
+msgid "Shrink Rotate 90"
+msgstr ""
+
+#: class-iconize-wp.php:2541
+msgid "Shrink Rotate 180"
+msgstr ""
+
+#: class-iconize-wp.php:2542
+msgid "Shrink Rotate 270"
+msgstr ""
+
+#: class-iconize-wp.php:2543
+msgid "Shrink Rotate 360"
+msgstr ""
+
+#: class-iconize-wp.php:2544
+msgid "Shrink Flip Horizontally"
+msgstr ""
+
+#: class-iconize-wp.php:2545
+msgid "Shrink Flip Vertically"
+msgstr ""
+
+#: class-iconize-wp.php:2553
+msgid "Buzz Out"
+msgstr ""
+
+#: class-iconize-wp.php:2554
+msgid "Wobble Vertical"
+msgstr ""
+
+#: class-iconize-wp.php:2555
+msgid "Wobble Horizontal"
+msgstr ""
+
+#: class-iconize-wp.php:2556
+msgid "Wobble To Top Right"
+msgstr ""
+
+#: class-iconize-wp.php:2557
+msgid "Wobble To Bottom Right"
+msgstr ""
+
+#: class-iconize-wp.php:2558
+msgid "Wobble To Bottom Left"
+msgstr ""
+
+#: class-iconize-wp.php:2559
+msgid "Wobble To Top Left"
+msgstr ""
+
+#: class-iconize-wp.php:2560
+msgid "Wobble Top"
+msgstr ""
+
+#: class-iconize-wp.php:2561
+msgid "Wobble Bottom"
+msgstr ""
+
+#: class-iconize-wp.php:2562
+msgid "Wobble Skew"
+msgstr ""
+
+#: class-iconize-wp.php:2575
+msgid "2x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2576
+msgid "3x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2577
+msgid "4x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2578
+msgid "5x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2579
+msgid "6x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2580
+msgid "7x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2581
+msgid "8x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2582
+msgid "9x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2583
+msgid "10x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2584
+msgid "Sharp"
+msgstr ""
+
+#: class-iconize-wp.php:2585
+msgid "Sharp 2x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2586
+msgid "Sharp 3x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2587
+msgid "Sharp 4x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2588
+msgid "Sharp 5x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2589
+msgid "Sharp 6x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2590
+msgid "Sharp 7x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2591
+msgid "Sharp 8x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2592
+msgid "Sharp 9x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2593
+msgid "Sharp 10x Larger"
+msgstr ""
+
+#: class-iconize-wp.php:2597
+msgid "Left"
+msgstr ""
+
+#: class-iconize-wp.php:2598
+msgid "Center"
+msgstr ""
+
+#: class-iconize-wp.php:2599
+msgid "Right"
+msgstr ""
+
+#: class-iconize-wp.php:2784 class-iconize-wp.php:2799
+#: class-iconize-wp.php:2814 class-iconize-wp.php:2879
+msgid "None"
+msgstr ""
+
+#: class-iconize-wp.php:2834
+msgid "Change color to parent color on hover"
+msgstr ""
+
+#: class-iconize-wp.php:2852
+msgid "Inherit"
+msgstr ""
+
+#: class-iconize-wp.php:2860
+msgid "Custom"
+msgstr ""
+
+#: includes/class-iconize-walker-category.php:102
+msgid "View all posts filed under %s"
+msgstr ""
+
+#: includes/class-iconize-walker-category.php:134
+msgid "Feed for all posts filed under %s"
+msgstr ""
+
+#. translators: %s: title of menu item which is invalid
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:74
+msgid "%s (Invalid)"
+msgstr ""
+
+#. translators: %s: title of menu item in draft status
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:78
+msgid "%s (Pending)"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:91
+msgid "sub item"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:106
+msgid "Move up"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:119
+msgid "Move down"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:121
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:123
+msgid "Edit Menu Item"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:132
+msgid "URL"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:139
+msgid "Navigation Label"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:145
+msgid "Title Attribute"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:152
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:157
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:163
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:169
+msgid "Description"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:171
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:182
+msgid "Move"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:183
+msgid "Up one"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:184
+msgid "Down one"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:187
+msgid "To the top"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:194
+msgid "Original: %s"
+msgstr ""
+
+#: includes/menu-walkers/class-iconize-walker-nav-menu-edit.php:207
+msgid "Remove"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:11
+msgid ""
+"Display iconized taxonomy terms ( Categories, Tags, custom taxonomies )."
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:12
+msgid "Iconized Taxonomies"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:29
+msgid "Tags"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:195
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:200
+msgid "Taxonomy:"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:223
+msgid "Widget style:"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:225
+msgid "List ( Theme Styles )"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:226
+msgid "List ( Iconize Styles )"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:227
+msgid "Cloud ( Theme Styles )"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:228
+msgid "Cloud ( Iconize Styles )"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:234
+msgid "Show post counts"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:237
+msgid "Show hierarchy"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:241
+msgid "If term doesn't have icon assigned:"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:243
+msgid "Leave it as is"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:244
+msgid "Insert default icon ( select below )"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:245
+msgid "Override all icons with default icon ( select below )"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:251
+msgid "Default icon:"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:266
+msgid "Keep/Disable/Override icon effects:"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:268
+msgid "Keep existing effects"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:269
+msgid "Remove effects"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:323
+msgid "Remove/Override icon colors?"
+msgstr ""
+
+#: includes/widgets/class-iconize-widget-taxonomies.php:332
+msgid "Every icon inherits link color on hover?"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Iconize WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://codecanyon.net/item/iconize-wordpress-plugin/6481628"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Visually add vector icons to posts, pages, menu items, widget titles, "
+"categories, tags and custom taxonomies using modal dialog."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mladen Ivančević"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://codecanyon.net/user/mladen16/"
+msgstr ""
